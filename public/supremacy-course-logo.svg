@@ -1,0 +1,13 @@
+<svg width="720" height="220" viewBox="0 0 720 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="220" rx="36" fill="#FFF7EA"/>
+  <path d="M0 0H720V66C582 70 533 115 398 110C258 105 215 53 0 74V0Z" fill="#7A0F24"/>
+  <path d="M0 0H720V34C589 46 513 80 372 76C231 72 170 28 0 43V0Z" fill="#D9A12A"/>
+  <circle cx="115" cy="117" r="64" fill="#7A0F24"/>
+  <circle cx="115" cy="117" r="52" stroke="#D9A12A" stroke-width="8"/>
+  <path d="M82 133C92 145 108 151 124 148C143 145 155 134 155 119C155 101 141 93 119 89C102 86 96 82 96 74C96 66 104 60 117 60C130 60 140 65 148 75L160 63C149 49 136 43 118 43C96 43 78 56 78 76C78 96 94 103 115 107C132 110 137 114 137 122C137 130 130 135 119 136C107 138 96 133 89 124L82 133Z" fill="#FFF7EA"/>
+  <path d="M163 159C151 172 135 180 116 180C81 180 52 152 52 117C52 82 81 54 116 54C135 54 152 62 163 75" stroke="#D9A12A" stroke-width="9" stroke-linecap="round"/>
+  <text x="210" y="116" fill="#7A0F24" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="700" letter-spacing="2">SUPREMACY</text>
+  <text x="213" y="158" fill="#18181B" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="7">COURSE</text>
+  <path d="M213 177H617" stroke="#D9A12A" stroke-width="6" stroke-linecap="round"/>
+  <text x="214" y="198" fill="#7A0F24" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3">LANGUAGE &amp; OFFICE TRAINING CENTER</text>
+</svg>
