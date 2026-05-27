@@ -30,25 +30,27 @@ export default function Navbar() {
       initial={{ y: -28, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.65, ease: "easeOut" }}
-      className="fixed inset-x-0 top-0 z-50 px-4 pt-4"
+      className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-4 sm:pt-4"
     >
       <nav
-        className={`mx-auto flex max-w-7xl items-center justify-between rounded-3xl border px-4 py-3 transition-all duration-300 md:px-5 ${
+        className={`mx-auto flex max-w-7xl items-center justify-between gap-3 rounded-3xl border px-3 py-2.5 transition-all duration-300 sm:px-4 sm:py-3 md:px-5 ${
           scrolled
             ? "border-white/60 bg-white/72 shadow-lg shadow-burgundy-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-charcoal/72"
             : "border-white/50 bg-white/48 backdrop-blur-xl dark:border-white/10 dark:bg-white/7"
         }`}
       >
         <a href="#home" className="flex min-w-0 items-center gap-3" aria-label="Supremacy Course home">
-          <Image
-            src="/assets/logo.jpeg"
-            alt="Supremacy Course logo"
-            width={140}
-            height={44}
-            priority
-            className="h-11 w-auto rounded-2xl shadow-sm"
-          />
-          <span className="hidden text-sm font-black tracking-[0.18em] text-burgundy-700 dark:text-cream sm:block">
+          <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full border border-gold-500/35 bg-white shadow-sm sm:h-12 sm:w-12">
+            <Image
+              src="/assets/logo.jpeg"
+              alt="Supremacy Course logo"
+              fill
+              sizes="48px"
+              priority
+              className="object-cover object-[center_32%]"
+            />
+          </span>
+          <span className="hidden truncate text-sm font-black tracking-[0.16em] text-burgundy-700 dark:text-cream md:block">
             SUPREMACY COURSE
           </span>
         </a>
@@ -65,13 +67,13 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           <ThemeToggle />
           <motion.a
             href="tel:0347886833"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}
-            className="hidden items-center gap-2 rounded-full bg-burgundy-700 px-5 py-3 text-sm font-bold text-white shadow-maroon transition hover:bg-burgundy-500 md:inline-flex"
+            className="hidden items-center gap-2 rounded-full bg-burgundy-700 px-5 py-3 text-sm font-bold text-white shadow-maroon transition hover:bg-burgundy-500 xl:inline-flex"
           >
             <Phone className="h-4 w-4" />
             Call Now
@@ -94,7 +96,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.98 }}
             transition={{ duration: 0.22 }}
-            className="mx-auto mt-3 max-w-7xl rounded-3xl border border-white/60 bg-white/82 p-3 shadow-2xl backdrop-blur-2xl dark:border-white/10 dark:bg-charcoal/88 lg:hidden"
+            className="mx-auto mt-3 max-w-7xl rounded-3xl border border-white/60 bg-white/90 p-3 shadow-2xl backdrop-blur-2xl dark:border-white/10 dark:bg-charcoal/92 lg:hidden"
           >
             <div className="grid gap-1">
               {links.map((link) => (

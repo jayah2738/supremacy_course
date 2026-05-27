@@ -7,14 +7,16 @@ export default function Footer() {
   return (
     <footer className="border-t border-burgundy-700/10 bg-white/46 py-10 backdrop-blur-xl dark:border-white/10 dark:bg-black/18">
       <div className="section-shell grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-          <Image
-            src="/assets/logo.jpeg"
-            alt="Supremacy Course logo"
-            width={150}
-            height={46}
-            className="h-12 w-auto rounded-2xl"
-          />
+        <div className="flex items-center gap-4">
+          <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border border-gold-500/40 bg-white shadow-lg shadow-burgundy-900/10 dark:border-gold-300/40">
+            <Image
+              src="/assets/logo.jpeg"
+              alt="Supremacy Course logo"
+              fill
+              sizes="56px"
+              className="object-cover object-[center_32%]"
+            />
+          </div>
           <div>
             <p className="text-lg font-black tracking-[0.16em] text-burgundy-700 dark:text-cream">
               SUPREMACY COURSE

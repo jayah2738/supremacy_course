@@ -1,3 +1,4 @@
+import BackToTop from "@/components/BackToTop";
 import Contact from "@/components/Contact";
 import Courses from "@/components/Courses";
 import Footer from "@/components/Footer";
@@ -18,6 +19,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <BackToTop />
     </>
   );
 }
